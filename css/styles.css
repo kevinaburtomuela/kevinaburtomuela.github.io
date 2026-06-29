@@ -1070,26 +1070,26 @@ body.light-mode .circle-btn {
     height: 80px;
     border: 2px solid red;
 }
-/* TOOLS SECTION - LIGHT MODE */
-body.light-mode .tools-section {
-  background-color: #f8fafc;
+  /* TOOLS SECTION - LIGHT MODE */
+body.light-mode section.tools-section {
+  background-color: #f8fafc !important;
+}
+
+body.light-mode .tools-title {
+  color: #0f172a !important;
 }
 
 body.light-mode .tools-card {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
   border: 1px solid #e2e8f0;
 }
 
 body.light-mode .tools-card h3 {
-  color: #0f172a;
+  color: #0f172a !important;
 }
 
 body.light-mode .tool-item span {
-  color: #0f172a;
-}
-
-body.light-mode .tools-title {
-  color: #0f172a;
+  color: #0f172a !important;
 }
   
   
