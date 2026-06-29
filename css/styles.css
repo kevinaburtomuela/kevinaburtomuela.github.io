@@ -1070,7 +1070,7 @@ body.light-mode .circle-btn {
     height: 80px;
     border: 2px solid red;
 }
-  /* TOOLS SECTION - LIGHT MODE */
+}/* TOOLS SECTION - LIGHT MODE */
 body.light-mode section.tools-section {
   background-color: #f8fafc !important;
 }
@@ -1092,7 +1092,3 @@ body.light-mode .tool-item span {
   color: #0f172a !important;
 }
   
-  
-
-
-}
