@@ -1070,6 +1070,27 @@ body.light-mode .circle-btn {
     height: 80px;
     border: 2px solid red;
 }
+/* TOOLS SECTION - LIGHT MODE */
+body.light-mode .tools-section {
+  background-color: #f8fafc;
+}
+
+body.light-mode .tools-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+}
+
+body.light-mode .tools-card h3 {
+  color: #0f172a;
+}
+
+body.light-mode .tool-item span {
+  color: #0f172a;
+}
+
+body.light-mode .tools-title {
+  color: #0f172a;
+}
   
   
 
