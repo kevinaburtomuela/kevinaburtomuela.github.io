@@ -1,3 +1,20 @@
+// 🍔 MENU HAMBURGUESA (móvil)
+const hamburgerBtn = document.getElementById("hamburgerBtn");
+const navMenu = document.getElementById("navMenu");
+
+hamburgerBtn.addEventListener("click", () => {
+  hamburgerBtn.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
+
+// Cierra el menú al hacer click en cualquier link (mejor UX en móvil)
+navMenu.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    hamburgerBtn.classList.remove("active");
+    navMenu.classList.remove("active");
+  });
+});
+
 // 🌙 MODO OSCURO / CLARO
 const themeBtn = document.querySelector(".theme-toggle");
 

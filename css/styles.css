@@ -591,6 +591,94 @@ input:checked + .slider::before {
   text-align: center; 
 }
 
+/* =========================
+   HAMBURGUESA (oculto en desktop)
+========================= */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 200;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #e5e7eb;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+body.light-mode .hamburger span {
+  background: #0f172a;
+}
+
+/* Animación a "X" cuando el menú está abierto */
+.hamburger.active span:nth-child(1) {
+  transform: translateY(8.5px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-8.5px) rotate(-45deg);
+}
+
+/* =========================
+   NAV RESPONSIVE (MÓVIL)
+========================= */
+
+@media (max-width: 900px) {
+
+  nav {
+    padding: 15px 20px;
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    max-width: 320px;
+    height: 100vh;
+    background: #020617;
+    flex-direction: column;
+    padding: 90px 30px 30px;
+    gap: 25px;
+    padding-right: 30px; /* sobreescribe el padding-right: 180px de desktop */
+    transition: right 0.3s ease;
+    box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+  }
+
+  body.light-mode .menu {
+    background: #ffffff;
+  }
+
+  .menu.active {
+    right: 0;
+  }
+
+  .nav-controls {
+    position: static;
+    right: auto;
+  }
+}
+
 
 /* =========================
    DARK MODE BUTTON
