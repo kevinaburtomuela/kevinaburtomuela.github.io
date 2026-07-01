@@ -892,6 +892,31 @@ body.light-mode .slider {
   font-size: 13px;
 }
 
+/* =========================
+   PROJECTS - RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-center {
+    grid-column: 1 / 1;
+    max-width: 100%;
+  }
+
+  .project-tech {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+@media (max-width: 500px) {
+  .project-tech {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
 /* Botones inferiores */
 
 .project-links {
@@ -1153,11 +1178,6 @@ body.light-mode .circle-btn {
     height: 240px;
 
   }
-  .btn-linkedin img {
-    width: 80px;
-    height: 80px;
-    border: 2px solid red;
-}
 }/* TOOLS SECTION - LIGHT MODE */
 body.light-mode section.tools-section {
   background-color: #f8fafc !important;
